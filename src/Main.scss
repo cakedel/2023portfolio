@@ -30,7 +30,8 @@ body {
     }
   }
   .num {
-    font-size: 2rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.5rem;
     font-weight: 300;
     position: fixed;
     top: 40%;
@@ -77,8 +78,9 @@ body {
     opacity: 0;
     transition: 1s 1s;
     .pfTitle {
-      font-size: 3rem;
-      font-weight: 700;
+      font-family: 'Sora', sans-serif;
+      font-size: 4rem;
+      font-weight: 500;
       margin-bottom: 1rem;
     }
     .pfLink {
