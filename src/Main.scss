@@ -1,0 +1,122 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+.inner {
+  max-width: 1170px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.PORTFOLIO {
+  .cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: #333;
+    overflow: hidden;
+    z-index: 1000;
+    transition: 0.5s;
+    &.on {
+      height: 100vh;
+    }
+  }
+  .num {
+    font-size: 2rem;
+    font-weight: 300;
+    position: fixed;
+    top: 40%;
+    left: 5rem;
+    z-index: 999;
+  }
+  .Gnb {
+    position: fixed;
+    top: calc(50% - 5rem);
+    left: 5rem;
+    z-index: 999;
+    ul {
+      .menu {
+        display: inline-block;
+        gap: 1rem;
+        width: 5px;
+        height: 5px;
+        background: #333;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.mainPage {
+  h1 {
+    font-family: "LeferiPoint-WhiteObliqueA";
+    font-size: 4.5rem;
+  }
+
+}
+.section {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .picture {
+    flex: 7;
+    opacity: 0;
+    transition: 1s 0.5s;
+  }
+  .desc {
+    flex: 5;
+    transform: translateY(-20rem);
+    opacity: 0;
+    transition: 1s 1s;
+    .pfTitle {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .pfLink {
+      display: inline-block;
+      padding: 7px 20px 5px 20px;
+      margin-bottom: 3rem;
+      background: #222;
+      border-radius: 1.5rem;
+      color: #fff;
+    }
+    .pfType {
+      margin-bottom: 1rem;
+    }
+    .pfInfo {
+      margin-bottom: 3rem;
+    }
+    strong {
+      display: inline-block;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .pfColor {
+      display: flex;
+      gap: 1rem;
+      li {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+    }
+  }
+  &.active {
+    .picture {
+      opacity: 1;
+    }
+    .desc {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
