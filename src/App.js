@@ -74,7 +74,14 @@ const App = () => {
                       <div className="inner">
                         <div className="cover">
                           <div className="picture">
-                            <img src={it.src} alt="{it.title}" />
+                            <img
+                              src={
+                                process.env.PUBLIC_URL + "/assets/img/pf.png"
+                              }
+                              alt="{it.title}"
+                              className="pfPicture"
+                            />
+                            <figure className={`item0${it.id}`}></figure>
                           </div>
                           <ul className="desc">
                             <li className="pfTitle">{it.title}</li>
@@ -134,13 +141,30 @@ const App = () => {
               <div className="section profile">
                 <div className="case">
                   <div className="inner">
-                    <h2>PROFILE</h2>
-                    <ul>
-                      <li>{profile.name}</li>
-                      <li>{profile.email}</li>
-                      <li>{profile.tel}</li>
-                      <li>{profile.skill}</li>
-                    </ul>
+                  <TypeAnimation
+                    sequence={["HONG JIWON"]}
+                    wrapper="h2"
+                    speed="0"
+                    cursor={true}
+                  />
+                    <div className="desc">
+                      <div className="content">
+                        <h3>PROFILE</h3>
+                        <ul>
+                          <li>{profile.name}</li>
+                          <li>{profile.email}</li>
+                          <li>{profile.tel}</li>
+                        </ul>
+                      </div>
+                      <div className="content">
+                        <h3>SKILL</h3>
+                        <ul>
+                          {profile.skill.map((it, idx) => {
+                            return <li key={idx}>{it}</li>;
+                          })}
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
