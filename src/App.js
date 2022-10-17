@@ -11,31 +11,48 @@ const Cover = (on) => {
 const App = () => {
   const [num, setNum] = useState(1);
   const [on, setOn] = useState(false);
+  const afterPage = (destination, origin) => {
+    setNum(destination.index);
+    setOn(destination.index === origin.index - 1 ? !on : on);
+    console.log(num);
+  };
+
   return (
     <div className="PORTFOLIO">
-      <div className="num">{portfolioData[num - 1]?.title}</div>
+      <div className="num">{portfolioData[num - 1]?.id}</div>
       <nav className="Gnb">
         <ul>
           {portfolioData.map((it, idx) => {
             return (
-              <li>
-                <a href={`#${it.anchors}`} className="menu"></a>
+              <li key={idx}>
+                <a
+                  href={`#${it.anchors}`}
+                  className={`menu ${idx === num - 1 ? "on" : ""}`}
+                ></a>
               </li>
             );
           })}
+          <li>
+            <a
+              href={`#profile`}
+              className={`menu ${6 === num ? "on" : ""}`}
+            ></a>
+          </li>
         </ul>
       </nav>
       <ReactFullpage
         //fullpage options
         licenseKey={"YOUR_KEY_HERE"}
         scrollingSpeed={1000}
-        anchors={["cover", ...ANCHOR, "footer"]}
-        afterLoad={(origin, destination) => setNum(destination.index)}
+        anchors={["cover", ...ANCHOR, "profile"]}
+        afterLoad={(origin, destination, direction) =>
+          afterPage(destination, origin)
+        }
         css3={false}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section mainPage">
+              <div className="section mainPage cover">
                 <div className="case">
                   <TypeAnimation
                     sequence={["상상을 코딩하다"]}
@@ -43,7 +60,11 @@ const App = () => {
                     speed="0"
                     cursor={true}
                   />
-                  <p>2022 HONG JIWON's PORTFOLIO</p>
+                  <p>2022 HONG JIWON PORTFOLIO</p>
+                  <div className="code">
+                    CODE <br />
+                    IMAGINATION
+                  </div>
                 </div>
               </div>
               {portfolioData.map((it, idx) => {
@@ -83,7 +104,7 @@ const App = () => {
                             <li className="pfSkill">
                               {it.skill?.map((el, idx) => {
                                 return (
-                                  <ul className="skill">
+                                  <ul className="skill" key={idx}>
                                     <li>{el}</li>
                                   </ul>
                                 );
@@ -110,6 +131,19 @@ const App = () => {
                   </div>
                 );
               })}
+              <div className="section profile">
+                <div className="case">
+                  <div className="inner">
+                    <h2>PROFILE</h2>
+                    <ul>
+                      <li>{profile.name}</li>
+                      <li>{profile.email}</li>
+                      <li>{profile.tel}</li>
+                      <li>{profile.skill}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </ReactFullpage.Wrapper>
           );
         }}

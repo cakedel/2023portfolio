@@ -5,7 +5,7 @@ body {
   font-size: 1.6rem;
 }
 .inner {
-  max-width: 1200px;
+  max-width: 1500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@ body {
   .cover {
     display: flex;
     gap: 80px;
-    height: 600px;
+    height: 800px;
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.3);
@@ -26,41 +26,69 @@ body {
 .PORTFOLIO {
   .num {
     font-family: "Sora", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     position: fixed;
     top: 40%;
-    left: 5rem;
+    left: calc(7rem - 0.3rem);
     z-index: 999;
   }
   .Gnb {
     position: fixed;
+    text-align: center;
     top: calc(50% - 5rem);
-    left: 5rem;
+    left: 7rem;
     z-index: 999;
     ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
       .menu {
         display: inline-block;
-        gap: 1rem;
-        width: 5px;
-        height: 5px;
+        width: 0.5rem;
+        height: 0.5rem;
         background: #333;
         border-radius: 50%;
+        transform-origin: center;
+        &.on {
+          transform: scale(1.8);
+          transition: 0.5s;
+        }
       }
     }
   }
+  .profileAnchor {
+    font-size: 1.8rem;
+    width: 2rem;
+    position: fixed;
+    bottom: 20%;
+    left: 3.5rem;
+    z-index: 999;
+  }
 }
 .mainPage {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
   h1 {
     font-family: "LeferiPoint-WhiteObliqueA";
     font-size: 5.5rem;
     margin-bottom: 1rem;
-    text-align: center;
   }
   p {
     font-family: "LeferiPoint-WhiteObliqueA";
     font-size: 1.8rem;
-    text-align: center;
+  }
+  .code {
+    font-family: "Archivo Black", sans-serif;
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255, 255, 255, 0.2);
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    font-weight: 900;
+    text-align: right;
   }
 }
 .section {
@@ -104,6 +132,14 @@ body {
     .pfInfo {
       margin-bottom: 3rem;
       word-break: keep-all;
+      &.pfInfo::before {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 0.2rem;
+        background: #777;
+        margin-bottom: 1rem;
+      }
     }
     strong {
       display: inline-block;
@@ -153,6 +189,21 @@ body {
     .desc {
       transform: translateY(0);
       opacity: 1;
+    }
+  }
+}
+.profile {
+  font-family: "LeferiPoint-WhiteObliqueA";
+  .inner {
+    gap: 10rem;
+    h2 {
+      font-size: 6rem;
+    }
+    ul {
+      font-size: 2.5rem;
+      li:not(last-child) {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

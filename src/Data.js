@@ -1,5 +1,5 @@
 const profile = {
-  name: "Hong jiwon",
+  name: "Hong Jiwon",
   email: "cakedel86@gmail.com",
   tel: "010-2824-8898",
 };
@@ -28,8 +28,8 @@ const portfolioData = [
     font: ["폰트이름", "폰트이름2"],
     info: "react-router-dom을 이용한 SPA 웹어플리케이션입니다. 주가 api와 연동되어 최근 주가 정보도 확인할 수 있으며 채용정보 탭에서는 게시판 기능을 사용할 수 있습니다.",
     skill: ["React", "react-router-dom", "axios", "redux-toolkit", "sass"],
-    src: process.env.PUBLIC_URL + "/assets/img/pf.png",
-    demo: "http://cakedel.github.io/",
+    src: process.env.PUBLIC_URL + "/assets/img/pf02.png",
+    demo: "https://cakedel.github.io/kolonindustries/",
     github: "https://github.com/cakedel/kolonindustries",
   },
   {
@@ -41,7 +41,7 @@ const portfolioData = [
     info: "JQuery 라이브러리를 사용한 반응형 웹 사이트입니다. 기존의 까렌다쉬 홈페이지에서 메뉴를 좀 더 정리하고 돋보이도록 설계했습니다.",
     color: ["#da291c", "#fff", "#333"],
     skill: ["Responsive Web", "JQuery", "slick-slide"],
-    src: process.env.PUBLIC_URL + "/assets/img/pf.png",
+    src: process.env.PUBLIC_URL + "/assets/img/pf03.png",
     demo: "http://cakedel.github.io/porfol/carandache/",
     github: "https://github.com/cakedel/porfol/tree/main/carandache",
   },
