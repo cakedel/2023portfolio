@@ -5,32 +5,27 @@ body {
   font-size: 1.6rem;
 }
 .inner {
-  max-width: 1170px;
+  max-width: 1200px;
   display: flex;
-  gap: 100px;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  .cover {
+    display: flex;
+    gap: 80px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 0px 50px;
+  }
 }
 
 .PORTFOLIO {
-  .cover {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    background: #333;
-    overflow: hidden;
-    z-index: 1000;
-    transition: 0.5s;
-    &.on {
-      height: 100vh;
-    }
-  }
   .num {
-    font-family: 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
     position: fixed;
@@ -58,49 +53,88 @@ body {
 .mainPage {
   h1 {
     font-family: "LeferiPoint-WhiteObliqueA";
-    font-size: 4.5rem;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
   }
-
+  p {
+    font-family: "LeferiPoint-WhiteObliqueA";
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
 .section {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../public/assets/img/bg.png) no-repeat center center/cover;
+  background-attachment: fixed;
+
   .picture {
     flex: 7;
     opacity: 0;
-    transition: 1s 0.5s;
+    transition: 2s 0.5s;
   }
   .desc {
     flex: 5;
-    transform: translateY(-20rem);
+    transform: translateY(-10rem);
     opacity: 0;
-    transition: 1s 1s;
+    transition: 0.7s 1s;
     .pfTitle {
-      font-family: 'Sora', sans-serif;
+      font-family: "Sora", sans-serif;
       font-size: 4rem;
       font-weight: 500;
       margin-bottom: 1rem;
     }
     .pfLink {
-      display: inline-block;
-      padding: 7px 20px 5px 20px;
-      margin-bottom: 3rem;
-      background: #222;
-      border-radius: 1.5rem;
-      color: #fff;
-    }
-    .pfType {
-      margin-bottom: 1rem;
+      ul {
+        display: flex;
+        gap: 10px;
+        .linkBtn {
+          display: inline-block;
+          padding: 7px 20px 5px 20px;
+          margin-bottom: 3rem;
+          background: #222;
+          border-radius: 1.5rem;
+          color: #fff;
+        }
+      }
     }
     .pfInfo {
       margin-bottom: 3rem;
+      word-break: keep-all;
     }
     strong {
       display: inline-block;
       font-size: 2rem;
+      font-weight: 600;
       margin-bottom: 1rem;
+    }
+    .pfSkillTitle {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .pfSkill {
+      margin-bottom: 30px;
+      .skill {
+        position: relative;
+        font-size: 1.6rem;
+        display: flex;
+        gap: 10px;
+        padding-left: 10px;
+        &.skill::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          content: "";
+          width: 3px;
+          height: 3px;
+          background: #333;
+        }
+      }
     }
     .pfColor {
       display: flex;
