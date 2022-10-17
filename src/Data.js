@@ -2,7 +2,7 @@ const profile = {
   name: "Hong Jiwon",
   email: "cakedel86@gmail.com",
   tel: "010-2824-8898",
-  skill: ["HTML", "CSS", "JavaScript", "React", "Sass", "Redux Toolkit"],
+  skill: ["HTML", "CSS", "JavaScript", "React", "Sass", "Redux Toolkit","Git"],
 };
 
 export { profile };
