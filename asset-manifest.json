@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/2022portfolio/static/css/main.83acaaba.css",
+    "main.js": "/2022portfolio/static/js/main.69264543.js",
+    "static/media/bg.png": "/2022portfolio/static/media/bg.466832e43cd4f70be3ab.png",
+    "index.html": "/2022portfolio/index.html",
+    "main.83acaaba.css.map": "/2022portfolio/static/css/main.83acaaba.css.map",
+    "main.69264543.js.map": "/2022portfolio/static/js/main.69264543.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83acaaba.css",
+    "static/js/main.69264543.js"
+  ]
+}
