@@ -141,12 +141,7 @@ const App = () => {
               <div className="section profile">
                 <div className="case">
                   <div className="inner">
-                  <TypeAnimation
-                    sequence={["HONG JIWON"]}
-                    wrapper="h2"
-                    speed="0"
-                    cursor={true}
-                  />
+                    <h2>HONG JIWON</h2>
                     <div className="desc">
                       <div className="content">
                         <h3>PROFILE</h3>
