@@ -52,7 +52,7 @@ const App = () => {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className="section mainPage cover">
+              <div className="section mainPage">
                 <div className="case">
                   <TypeAnimation
                     sequence={["상상을 코딩하다"]}
@@ -69,7 +69,7 @@ const App = () => {
               </div>
               {portfolioData.map((it, idx) => {
                 return (
-                  <div className="section" key={it.id}>
+                  <div className="section subPage" key={it.id}>
                     <div className="case">
                       <div className="inner">
                         <div className="cover">
@@ -138,14 +138,14 @@ const App = () => {
                   </div>
                 );
               })}
-              <div className="section profile">
+              <div className="section mainPage profile">
                 <div className="case">
                   <div className="inner">
                     <h2>HONG JIWON</h2>
                     <div className="desc">
                       <div className="content">
                         <h3>PROFILE</h3>
-                        <ul>
+                        <ul className="profileContent">
                           <li>{profile.name}</li>
                           <li>{profile.email}</li>
                           <li>{profile.tel}</li>
@@ -154,9 +154,28 @@ const App = () => {
                       <div className="content">
                         <h3>SKILL</h3>
                         <ul>
-                          {profile.skill.map((it, idx) => {
-                            return <li key={idx}>{it}</li>;
-                          })}
+                          <li>
+                            Language
+                            <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>JavaScript</li>
+                            </ul>
+                          </li>
+                          <li>
+                            Library / FrameWork
+                            <ul>
+                              <li>React</li>
+                              <li>redux-toolkit</li>
+                              <li>JQuery</li>
+                            </ul>
+                          </li>
+                          <li>Graphic
+                            <ul>
+                              <li>PhotoShop</li>
+                              <li>Illustrator</li>
+                            </ul>
+                          </li>
                         </ul>
                       </div>
                     </div>

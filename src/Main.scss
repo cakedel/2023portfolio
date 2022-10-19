@@ -68,16 +68,19 @@ body {
 }
 .mainPage {
   position: relative;
-  text-align: center;
   overflow: hidden;
+  background: url(../public/assets/img/bg.png) no-repeat center center/cover;
+  background-attachment: fixed;
   h1 {
     font-family: "LeferiPoint-WhiteObliqueA";
     font-size: 5.5rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   p {
     font-family: "LeferiPoint-WhiteObliqueA";
     font-size: 1.8rem;
+    text-align: center;
   }
   .code {
     font-family: "Archivo Black", sans-serif;
@@ -96,8 +99,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../public/assets/img/bg.png) no-repeat center center/cover;
-  background-attachment: fixed;
+  &.subPage {
+    background: url(../public/assets/img/bg_sub.png) no-repeat center
+      center/cover;
+    background-attachment: fixed;
+  }
 
   .picture {
     position: relative;
@@ -245,6 +251,22 @@ body {
           font-weight: 300;
           li:not(last-child) {
             margin-bottom: 1rem;
+          }
+          li {
+            font-weight: 600;
+            ul {
+              display: flex;
+              gap: 2rem;
+              li {
+                font-weight: 300;
+                font-size: 1.8rem;
+              }
+            }
+          }
+          &.profileContent {
+            li {
+              font-weight: 300;
+            }
           }
         }
       }
