@@ -55,7 +55,12 @@ const App = () => {
               <div className="section mainPage">
                 <div className="case">
                   <TypeAnimation
-                    sequence={["상상을 코딩하다"]}
+                    sequence={[
+                      "생각만큼 넓어지는 세계",
+                      1500,
+                      "상상을 코딩하다"
+                    
+                    ]}
                     wrapper="h1"
                     speed="0"
                     cursor={true}
@@ -118,19 +123,6 @@ const App = () => {
                               })}
                             </li>
                             <li className="pfInfo">{it.info}</li>
-                            <li>
-                              {it.color && <strong>Color</strong>}
-                              <ul className="pfColor">
-                                {it.color?.map((el, idx) => {
-                                  return (
-                                    <li
-                                      key={idx}
-                                      style={{ background: el }}
-                                    ></li>
-                                  );
-                                })}
-                              </ul>
-                            </li>
                           </ul>
                         </div>
                       </div>
@@ -155,7 +147,7 @@ const App = () => {
                         <h3>SKILL</h3>
                         <ul>
                           <li>
-                            Language
+                            <strong>Language</strong>
                             <ul>
                               <li>HTML</li>
                               <li>CSS</li>
@@ -163,14 +155,15 @@ const App = () => {
                             </ul>
                           </li>
                           <li>
-                            Library / FrameWork
+                            <strong>Library / FrameWork</strong>
                             <ul>
                               <li>React</li>
                               <li>redux-toolkit</li>
                               <li>JQuery</li>
                             </ul>
                           </li>
-                          <li>Graphic
+                          <li>
+                            <strong>Graphic</strong>
                             <ul>
                               <li>PhotoShop</li>
                               <li>Illustrator</li>
