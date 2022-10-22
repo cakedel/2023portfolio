@@ -35,7 +35,7 @@ const App = () => {
           <li>
             <a
               href={`#profile`}
-              className={`menu ${6 === num ? "on" : ""}`}
+              className={`menu ${7 === num ? "on" : ""}`}
             ></a>
           </li>
         </ul>
@@ -54,21 +54,22 @@ const App = () => {
             <ReactFullpage.Wrapper>
               <div className="section mainPage">
                 <div className="case">
-                  <TypeAnimation
-                    sequence={[
-                      "생각만큼 넓어지는 세계",
-                      1500,
-                      "상상을 코딩하다"
-                    
-                    ]}
-                    wrapper="h1"
-                    speed="0"
-                    cursor={true}
-                  />
-                  <p>2022 HONG JIWON PORTFOLIO</p>
-                  <div className="code">
-                    CODE <br />
-                    IMAGINATION
+                  <div className="inner main">
+                    <TypeAnimation
+                      sequence={[
+                        "생각만큼 넓어지는 세계",
+                        1500,
+                        "상상을 코딩하다",
+                      ]}
+                      wrapper="h1"
+                      speed="0"
+                      cursor={true}
+                    />
+                    <p>2022 HONG JIWON PORTFOLIO</p>
+                    <div className="code">
+                      CODE <br />
+                      IMAGINATION
+                    </div>
                   </div>
                 </div>
               </div>
@@ -78,6 +79,8 @@ const App = () => {
                     <div className="case">
                       <div className="inner">
                         <div className="cover">
+                          <div className="mark">Portfolio 0{it.id}</div>
+                          <div className="ribbon"></div>
                           <div className="picture">
                             <img
                               src={
@@ -112,7 +115,8 @@ const App = () => {
                                 </li>
                               </ul>
                             </li>
-                            <li className="pfSkillTitle">Skill</li>
+                            <li className="pfInfo">{it.info}</li>
+                            <li className="pfSkillTitle">Tools</li>
                             <li className="pfSkill">
                               {it.skill?.map((el, idx) => {
                                 return (
@@ -122,7 +126,6 @@ const App = () => {
                                 );
                               })}
                             </li>
-                            <li className="pfInfo">{it.info}</li>
                           </ul>
                         </div>
                       </div>
@@ -141,6 +144,17 @@ const App = () => {
                           <li>{profile.name}</li>
                           <li>{profile.email}</li>
                           <li>{profile.tel}</li>
+                          <li className="home">
+                            <a
+                              href="https://github.com/cakedel"
+                              target="_balnk"
+                            >
+                              <i className="xi-github" />
+                            </a>
+                            <a href="https://velog.io/@cakedel" target="_blank">
+                              <i className="xi-home-o" />
+                            </a>
+                          </li>
                         </ul>
                       </div>
                       <div className="content">

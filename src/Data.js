@@ -2,7 +2,7 @@ const profile = {
   name: "Hong Jiwon",
   email: "cakedel86@gmail.com",
   tel: "010-2824-8898",
-  skill: ["HTML", "CSS", "JavaScript", "React", "Sass", "Redux Toolkit","Git"],
+  skill: ["HTML", "CSS", "JavaScript", "React", "Sass", "Redux Toolkit", "Git"],
 };
 
 export { profile };
@@ -59,10 +59,18 @@ const portfolioData = [
   },
   {
     id: 5,
+    title: "Wedgwood",
+    anchors: "Wedgwood",
+    info: "웨지우드 본연의 디자인을 살리면서 보다 심플하게 다듬은 웹페이지입니다.",
+    skill: ["JavaScript", "Swiper slide"],
+    src: process.env.PUBLIC_URL + "/assets/img/pf.png",
+    demo: "http://cakedel.github.io/porfol/wedgwood",
+    github: "https://github.com/cakedel/portfolio/tree/main/oera",
+  },
+  {
+    id: 6,
     title: "Oera",
     anchors: "Oera",
-    type: "Web",
-    font: ["폰트이름", "폰트이름2"],
     info: "오에라 홈페이지의 컨셉을 담으면서 브랜드 이미지를 보여주는 데에 중점을 둔 사이트입니다. 메인 컬러를 중심적으로 사용해 브랜드 정체성을 시각화했습니다.",
     skill: ["JQuery", "slick slide", "AOS"],
     src: process.env.PUBLIC_URL + "/assets/img/pf.png",
