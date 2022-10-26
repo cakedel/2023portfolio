@@ -79,7 +79,6 @@ const App = () => {
                     <div className="case">
                       <div className="inner">
                         <div className="cover">
-                          <div className="mark">Portfolio 0{it.id}</div>
                           <div className="ribbon"></div>
                           <div className="picture">
                             <img
@@ -172,7 +171,7 @@ const App = () => {
                             <strong>Library / FrameWork</strong>
                             <ul>
                               <li>React</li>
-                              <li>redux-toolkit</li>
+                              <li>Redux-toolkit</li>
                               <li>JQuery</li>
                             </ul>
                           </li>

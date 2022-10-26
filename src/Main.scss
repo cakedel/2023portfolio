@@ -121,7 +121,7 @@ body {
   background-attachment: fixed;
   h1 {
     font-family: "LeferiPoint-WhiteObliqueA";
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     text-align: center;
   }
@@ -176,7 +176,7 @@ body {
       width: 75%;
       height: 80%;
     }
-    @for $i from 1 through 5 {
+    @for $i from 1 through 6 {
       .item0#{$i} {
         background: url(../public/assets/img/pf0#{$i}.png)
           no-repeat
@@ -197,7 +197,7 @@ body {
   }
   .desc {
     flex: 5;
-    transform: translateY(-10rem);
+    transform: translateX(5rem);
     opacity: 0;
     transition: 0.7s 1s;
     .pfTitle {
