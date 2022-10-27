@@ -15,7 +15,7 @@ const portfolioData = [
     info: "코코넛 뮤직은 ManiaDB api 를 바탕으로 제작된 뮤직 웹어플리케이션입니다. 뮤직 플레이어는 트랙을 바꿔 음악을 재생할 수 있으며, 아티스트에 대한 검색 기능도 제공합니다.",
     skill: ["React", "React-router-dom", "Axios", "Redux-Toolkit"],
     src: process.env.PUBLIC_URL + "/assets/img/pf01.png",
-    demo: "http://cakedel.github.io/coconut",
+    demo: "https://coconut-music.herokuapp.com/",
     github: "https://github.com/cakedel/coconut/",
   },
   {
@@ -52,7 +52,7 @@ const portfolioData = [
     id: 5,
     title: "Wedgwood",
     anchors: "Wedgwood",
-    info: "웨지우드 본연의 디자인을 살리면서 보다 심플하게 다듬은 웹페이지입니다.",
+    info: "웨지우드 본연의 디자인을 살리면서 보다 심플하게 다듬은 웹페이지입니다. 상품 카테고리를 슬라이드로 전환하면 해당 상품을 보여주는 기능을 바닐라 자바스크립트로 구현했습니다.",
     skill: ["JavaScript", "Swiper slide"],
     src: process.env.PUBLIC_URL + "/assets/img/pf05.png",
     demo: "http://cakedel.github.io/porfol/wedgwood",
