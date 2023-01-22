@@ -14,7 +14,6 @@ const App = () => {
   const afterPage = (destination, origin) => {
     setNum(destination.index);
     setOn(destination.index === origin.index - 1 ? !on : on);
-    console.log(num);
   };
 
   return (

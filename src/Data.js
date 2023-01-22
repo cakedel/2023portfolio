@@ -16,7 +16,7 @@ const portfolioData = [
     skill: ["React", "React-router-dom", "Axios", "Redux-Toolkit"],
     src: process.env.PUBLIC_URL + "/assets/img/pf01.png",
     demo: "https://coconut-music-cakedel.koyeb.app/",
-    github: "https://github.com/cakedel/coconut/tree/main/project",
+    github: "https://github.com/cakedel/coconut/",
   },
   {
     id: 2,
