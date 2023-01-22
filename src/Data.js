@@ -15,7 +15,7 @@ const portfolioData = [
     info: "코코넛 뮤직은 ManiaDB api 를 바탕으로 제작된 뮤직 웹어플리케이션입니다. 뮤직 플레이어는 트랙을 바꿔 음악을 재생할 수 있으며, 아티스트에 대한 검색 기능도 제공합니다.",
     skill: ["React", "React-router-dom", "Axios", "Redux-Toolkit"],
     src: process.env.PUBLIC_URL + "/assets/img/pf01.png",
-    demo: "http://cakedel.github.io/coconut",
+    demo: "https://coconut-music-cakedel.koyeb.app/",
     github: "https://github.com/cakedel/coconut/tree/main/project",
   },
   {
