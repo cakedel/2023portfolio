@@ -18,7 +18,7 @@ const portfolioData = [
     period: "22.09.",
     skill: ["React", "react-router-dom", "axios", "redux-toolkit", "sass"],
     src: process.env.PUBLIC_URL + "/assets/img/pf01.png",
-    demo: "http://cakedel.github.io/coconut",
+    demo: "https://coconut-music-cakedel.koyeb.app/",
     github: "https://github.com/cakedel/coconut/tree/main/project",
   },
   {
