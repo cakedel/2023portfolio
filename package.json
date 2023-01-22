@@ -1,6 +1,5 @@
 {
-  "name": "react_fullpage",
-  "homepage": "https://cakedel.github.io/2023portfolio",
+  "name": "2023_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +18,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
