@@ -64,7 +64,7 @@ const App = () => {
                       speed="0"
                       cursor={true}
                     />
-                    <p>2022 HONG JIWON PORTFOLIO</p>
+                    <p>2023 HONG JIWON PORTFOLIO</p>
                     <div className="code">
                       CODE <br />
                       IMAGINATION
