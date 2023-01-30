@@ -114,6 +114,12 @@ const App = () => {
                               </ul>
                             </li>
                             <li className="pfInfo">{it.info}</li>
+                            <li className="pfPeriodTit">Period</li>
+                            <li className="pfPeriod">{it.period}</li>
+                            <li className="pfContTit">Contribution</li>
+                            <li className="pfContribution">
+                              {it.contribution}
+                            </li>
                             <li className="pfSkillTitle">Tools</li>
                             <li className="pfSkill">
                               {it.skill?.map((el, idx) => {
@@ -171,6 +177,7 @@ const App = () => {
                             <ul>
                               <li>React</li>
                               <li>Redux-toolkit</li>
+                              <li>Sass</li>
                               <li>JQuery</li>
                             </ul>
                           </li>

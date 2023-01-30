@@ -232,6 +232,22 @@ body {
         margin-bottom: 1rem;
       }
     }
+    .pfPeriodTit {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .pfPeriod {
+      margin-bottom: 3rem;
+    }
+    .pfContTit {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .pfContribution {
+      margin-bottom: 3rem;
+    }
     strong {
       display: inline-block;
       font-size: 2rem;
@@ -239,7 +255,7 @@ body {
       margin-bottom: 1rem;
     }
     .pfSkillTitle {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 10px;
     }
